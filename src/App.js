@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { AppBar, Box, Toolbar, Typography, Button, ButtonGroup } from "@mui/material";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          it's working
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Box>
+        <AppBar>
+          <Toolbar>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              myWebsite
+            </Typography>
+            <ButtonGroup variant="text" color="inherit">
+              <Button color="inherit">section 1</Button>
+              <Button color="inherit">section 2</Button>
+              <Button color="inherit">section 3</Button>
+            </ButtonGroup>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </Box>
     </div>
   );
 }
